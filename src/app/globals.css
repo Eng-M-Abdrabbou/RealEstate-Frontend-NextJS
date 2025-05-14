@@ -1,0 +1,84 @@
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors (Light Theme) */
+    --background: 255 100% 100%; /* White: hsl(0, 0%, 100%) */
+    --foreground: 224 71.4% 4.1%; /* Almost Black: hsl(224, 71.4%, 4.1%) */
+
+    /* Brand Colors (Adjust HSL values to your exact brand hex codes) */
+    /* Find HSL converters online: "hex to hsl" */
+    --primary: 150 70% 45%;         /* Your Main Green (e.g., #10B981) */
+    --primary-foreground: 0 0% 100%; /* White text on Primary */
+
+    --secondary: 150 60% 90%;       /* Your Light Mint/Green (e.g., #E6FFFA or a light green button bg) */
+    --secondary-foreground: 150 70% 35%; /* Darker Green text on Secondary */
+
+    --accent: 150 65% 60%;          /* An Accent Green (e.g., for hover states or highlights) */
+    --accent-foreground: 0 0% 100%; /* White text on Accent */
+
+    /* Neutral & Utility Colors */
+    --muted: 220 14.3% 95.9%;       /* Light Gray for subtle backgrounds/borders: hsl(220, 14.3%, 95.9%) */
+    --muted-foreground: 220 8.9% 46.1%;/* Gray text: hsl(220, 8.9%, 46.1%) */
+
+    --card: 255 100% 100%;           /* Card Background (White for light theme) */
+    --card-foreground: 224 71.4% 4.1%; /* Text on Card */
+
+    /* Specific for your dark blue sections if not using card for it */
+    --dark-section-bg: 215 70% 15%;    /* Your Dark Blue (e.g., #0A2342) */
+    --dark-section-fg: 0 0% 95%;       /* Light text on Dark Blue */
+
+
+    /* Borders, Inputs, Rings */
+    --border: 220 13% 91%;          /* hsl(220, 13%, 91%) */
+    --input: 220 13% 91%;
+    --ring: 150 70% 45%;            /* Primary color for focus rings */
+
+    /* Radius */
+    --radius: 0.5rem; /* Default border radius */
+  }
+
+  /*
+  .dark {
+    // Define dark mode variables here if needed
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    // ... and so on for all variables
+  }
+  */
+}
+
+@layer base {
+  * {
+    @apply border-border; /* Apply default border color */
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-roboto), sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+  h1 { @apply text-4xl md:text-5xl; }
+  h2 { @apply text-3xl md:text-4xl; }
+  h3 { @apply text-2xl md:text-3xl; }
+  /* ... etc. */
+
+  .container {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+.font-cursive-stylized {
+  font-family: var(--font-dancing-script), cursive;
+  @apply font-bold; /* Dancing Script often needs this */
+}
+
+/* Utility for green dot prefix */
+.tagline-dot::before {
+  content: '';
+  @apply inline-block w-2 h-2 rounded-full bg-primary mr-2 align-middle;
+}
