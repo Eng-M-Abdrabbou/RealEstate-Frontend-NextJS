@@ -15,8 +15,8 @@ export interface PartnersSectionProps {
 const PartnersSection: React.FC<PartnersSectionProps> = ({
   partnerLogos,
   tagline = "OUR PARTNERS AND TOP DEVELOPERS",
-  mainHeading = "We're going to become partners for the long run",
-  description = "Our curated list of partners and top developers ensures quality and reliability in every project we undertake. We build relationships based on trust and shared success."
+  mainHeading = "We are always open to new partnerships",
+  description = "We partner with top developers and companies to provide you with the best possible experience."
 }) => {
   return (
     <section className="py-12 md:py-20 bg-white">
