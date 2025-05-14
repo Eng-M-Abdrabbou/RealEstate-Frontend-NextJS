@@ -72,7 +72,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Part 1: Navigation Bar */}
       <header className="py-4 md:py-6 absolute top-0 left-0 right-0 z-20">
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <Logo text="PURE HOME" className="text-white" /> {/* Assuming white logo text */}
+          <Logo src="/logo.png" className="text-white" /> {/* Assuming white logo text */}
           <nav className="hidden md:flex space-x-2">
             {navLinks.map((link) => (
               <NavLinkItem key={link.href} {...link} />
