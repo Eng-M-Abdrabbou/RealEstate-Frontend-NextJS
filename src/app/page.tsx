@@ -13,12 +13,12 @@ import WhyChooseUsSection, { WhyChooseUsSectionProps } from '@/components/sectio
 
 // Dummy Data
 const dummyPartnerLogos: PartnersSectionProps['partnerLogos'] = [
-  { src: '/logos/partner1.png', alt: 'Partner 1', name: 'Alpha Corp' },
-  { src: '/logos/partner2.png', alt: 'Partner 2', name: 'Beta Solutions' },
-  { src: '/logos/partner3.png', alt: 'Partner 3', name: 'Gamma Devs' },
-  { src: '/logos/partner4.png', alt: 'Partner 4', name: 'Delta Group' },
-  { src: '/logos/partner5.png', alt: 'Partner 5', name: 'Epsilon Builders' },
-  { src: '/logos/partner6.png', alt: 'Partner 6', name: 'Zeta Estates' },
+  { src: '/logos/partner (1).jpg', alt: 'Partner 1', name: 'Alpha Corp' },
+  { src: '/logos/partner (2).jpg', alt: 'Partner 2', name: 'Beta Solutions' },
+  { src: '/logos/partner (3).jpg', alt: 'Partner 3', name: 'Gamma Devs' },
+  { src: '/logos/partner (4).jpg', alt: 'Partner 4', name: 'Delta Group' },
+  { src: '/logos/partner (5).jpg', alt: 'Partner 5', name: 'Epsilon Builders' },
+  { src: '/logos/partner (6).jpg', alt: 'Partner 6', name: 'Zeta Estates' },
 ];
 
 const dummyReviews: TestimonialsSectionProps['reviews'] = [
